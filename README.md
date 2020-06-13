@@ -1,6 +1,8 @@
 # Team HackOverflow
 Prototype for the U-Fit portal 
 
+Ngrok URL- http://efd552a03c7a.ngrok.io 
+ 
 With a mission to make a product that monitor daily calorie intake and achieve fitness goals through incentivization and gamification we introduce you with the smartest health analyst U-Fit. With U-Fit a user can scan the nutrition value of eatable or can choose a meal from predefined list. Then our system will store the value and give
 recommendation to achieve the user goal.
 
@@ -47,12 +49,12 @@ And of course U-Fit itself is build remotely with the help of version control **
 - Server complete with database settings [x]
 
 **Before 9 A.M Saturday**.
-- Work update to panel[]
-- UI complete and testing start.[]
+- Work update to panel[x]
+- UI complete and testing start.[x]
 
 **12 A.M. Saturday**
-- work complete[] 
-- Pitch to panel []
+- work complete[x] 
+- Pitch to panel [x]
 
 ### Structure
 On root, server for backend and client for frontend. Tree will be updated afterwards.
