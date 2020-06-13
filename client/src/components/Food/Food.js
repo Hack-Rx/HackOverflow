@@ -158,9 +158,10 @@ class Food extends React.Component {
 
   render() {
     let test=this.state.caloriesConsumedValue-this.state.calorieGoal;
-    let pushups=test*0.83;
-    let swimming=test*6/80;
-    let jog=test/140
+    
+    let pushups=Math.round(test*0.83);
+    let swimming=Math.round(test*6/80);
+    let jog=Math.round(test/140); 
     return (
       <div id="foodContainer">
         <div id="calorieSummary">

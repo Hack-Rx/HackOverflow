@@ -50,8 +50,8 @@ class FoodSearch extends React.Component {
 
     const name = async () => {
       console.log("ji1");
-      console.log(document.getElementById("myFileInput").toString);
-      clarifai.models.predict("bd367be194cf45149e75f01d59f77ba7", "https://samples.clarifai.com/food.jpg").then(
+      console.log(document.getElementById("myFileInput").value);
+      clarifai.models.predict("bd367be194cf45149e75f01d59f77ba7", "https://www.kingarthurflour.com/sites/default/files/styles/featured_image/public/recipe_legacy/20-3-large.jpg").then(
     function(response) {
       // do something with response
       console.log("ji1");
@@ -71,8 +71,11 @@ class FoodSearch extends React.Component {
     return (
       <div id="foodSearchContainer">
 
+
         <input id="myFileInput" type="file" accept="image/*;capture=camera"></input>
         <input id="myFileInput1" type="submit" onClick={name}></input>
+        
+        
         <form onSubmit={async (e) => await submitForm(
           e, "POST",  `/food/searchfood/${this.state.query === "" ? "User entered nothing in the query." : this.state.query}`,
           { 'Content-Type': 'application/json' },

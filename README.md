@@ -39,15 +39,16 @@ And of course U-Fit itself is build remotely with the help of version control **
 - Intro Pitch. [x]
 
 **Before 8 P.M Friday.**
-- Configure login Signup and server files. [x]
-- Work update to panel. [x]
+- Configure login Signup and server files. []
+- Work update to panel. []
 
 **Before 11 P.M. Friday**
-- Start working on UI [x]
-- Server complete with database settings [x]
+- Start working on UI []
+- Server complete with database settings []
 
 **Before 9 A.M Saturday**.
-- UI complete and testing start.[x]
+- Work update to panel[]
+- UI complete and testing start.[]
 
 **12 A.M. Saturday**
 - work complete[] 

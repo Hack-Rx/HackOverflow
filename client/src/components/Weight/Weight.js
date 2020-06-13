@@ -55,8 +55,8 @@ class Weight extends React.Component {
     return (
       <main id="weight">
         <div id="currentWeight">
-          <h3 id="currentGoalWeight">Goal Weight: {this.state.goalWeight} lbs </h3>
-          <h3 id="currentWeightHeading"> Current Weight:{this.state.currentWeight} lbs </h3>
+          <h3 id="currentGoalWeight">Goal Weight: {this.state.goalWeight} Kg </h3>
+          <h3 id="currentWeightHeading"> Current Weight:{this.state.currentWeight} Kg </h3>
         </div>
 
         <form onSubmit={async (e) => await submitForm(
@@ -77,13 +77,13 @@ class Weight extends React.Component {
 
 
           <div id="personContainer">
-            <h4 id="currentWeightLabel">{this.state.currentWeight} lbs</h4>
+            <h4 id="currentWeightLabel">{this.state.currentWeight} Kg</h4>
             {this.isMaleFunc()}
           </div>
 
           <div id="newWeight">
             <label htmlFor="newWeightInput">Enter A New Weight</label>
-            <input id="newWeightInput" name="weight" onChange={(e) => this.setState({weight: e.target.value})} required type="number" step="0.1" min="90" max="700" placeholder={`${this.state.currentWeight - 5} lbs`} />
+            <input id="newWeightInput" name="weight" onChange={(e) => this.setState({weight: e.target.value})} required type="number" step="0.1" min="10" max="700" placeholder={`${this.state.currentWeight - 5} Kg`} />
           </div>
           <input type="submit" value="Add Weight" id="newWeightSubmit" />
         </form>

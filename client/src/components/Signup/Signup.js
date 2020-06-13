@@ -19,8 +19,8 @@ class Signup extends React.Component {
       email: "",
       age: 21,
       password: "",
-      weight: 150.5,
-      goalWeight:140.5,
+      weight: 80,
+      goalWeight:70,
       calorieGoal: 1900
     };
   }
@@ -114,18 +114,20 @@ class Signup extends React.Component {
         </div>
 
         <div className="inputField">
-          <label className="inputFieldLabel">Weight (lbs)</label>
-          <input onChange={(e) => this.setState({weight: e.target.value}) } required type="number" step="0.1" min="90" max="700" name="weight" placeholder="Weight" />
+          <label className="inputFieldLabel">Weight (Kg)</label>
+          <input id="12" onChange={(e) => this.setState({weight: e.target.value}) } required type="number" step="0.1" min="10" max="700" name="weight" placeholder="Weight" />
         </div>
 
         <div className="inputField">
-          <label className="inputFieldLabel">Goal Weight (lbs)</label>
-          <input onChange={(e) => this.setState({goalWeight:e.target.value})} required type="number" step="0.1" min="90" max="700" name="goalWeight" placeholder="Goal Weight" />
+          <label className="inputFieldLabel">Goal Weight (Kg)</label>
+          <input id="13" onChange={(e) => this.setState({goalWeight:e.target.value})} required type="number" step="0.1" min="10" max="700" name="goalWeight" placeholder="Goal Weight" />
         </div>
-
+        {document.getElementById("12")-document.getElementById("13")==0 ? null : (document.getElementById("12")-document.getElementById("13")>0 ? (<h1>1500</h1>) : (<h1>2000</h1>)) 
+          
+        }
         <div className="inputField">
           <label className="inputFieldLabel">Calorie Goal</label>
-          <input onChange={(e) => this.setState({calorieGoal:e.target.value}) } required type="number" step="50" min="1000" max="20000" name="calorieGoal" placeholder="Calorie Goal" />
+          <input id="14" onChange={(e) => this.setState({calorieGoal:e.target.value}) } required type="number" step="50" min="1000" max="20000" name="calorieGoal" placeholder="Calorie Goal" />
         </div>
 
         <input type="submit" value="Sign Up" className="signupSubmit" />
