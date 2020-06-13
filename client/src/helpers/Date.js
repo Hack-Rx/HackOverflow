@@ -1,12 +1,12 @@
 /*
-*  Taken directly from react native documentation.
+*  Formatted this way as my database reads it this way, please do not use this outside of this project.
 */
 
 /*
-    @name setTodaysDate,
+    name setTodaysDate,
     @type Function : String,
     @format  date = `${year}${month}${day}`;
-    @description : Returns todays date in a formatted string that will be used to query DB.
+    work : Returns todays date in a formatted string that will be used to query DB.
   */
 export const setTodaysDate = () => {
   let month = new Date().getMonth();
@@ -20,10 +20,10 @@ export const setTodaysDate = () => {
 };
 
  /*
-   @name previousDate,
+   name previousDate,
    @type Function : String,
    @format  date = `${year}${month}${day}`;
-   @description : Returns todays date in a formatted string that will be used to query DB.
+   work : Returns todays date in a formatted string that will be used to query DB.
  */
  export const previousDate = (date = "20200413") => {
    let year = parseInt((`${date[0]}${date[1]}${date[2]}${date[3]}`));
@@ -52,10 +52,10 @@ export const setTodaysDate = () => {
  };
 
    /*
-    @name nextDate,
+    name nextDate,
     @type Function : String,
     @format  date = `${year}${month}${day}`;
-    @description : Returns todays date in a formatted string that will be used to query DB.
+    work : Returns todays date in a formatted string that will be used to query DB.
   */
   export const nextDate = (date = "20200414") => {
    let year = parseInt(`${date[0]}${date[1]}${date[2]}${date[3]}`);

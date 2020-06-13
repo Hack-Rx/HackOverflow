@@ -1,8 +1,7 @@
     /* 
-    taken from native documentation
-    @name submitForm,
+    name submitForm,
     @type Function : Void,
-    @description : A helper function to reduce the repetition of having to create multiple onSubmit methods.
+    work : A helper function to reduce the repetition of having to create multiple onSubmit methods.
      This also provides error catching functionality and onSuccess like methods for ease of use.
   */
   const submitForm = async (
